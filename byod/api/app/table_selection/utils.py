@@ -124,6 +124,13 @@ def get_relevant_tables_from_pinecone(natural_language_query, index_name="text_t
 
     return list(table_names)
 
+def get_relevant_tables_from_chroma(natural_language_query) -> List[str]:
+    """
+    Identify relevant tables for answering a natural language query via vector store
+    """
+    
+    return list(table_names)
+
 
 def _get_table_selection_message_with_descriptions(natural_language_query):
     return f"""
